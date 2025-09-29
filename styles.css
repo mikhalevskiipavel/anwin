@@ -1507,6 +1507,13 @@ body {
 .main-logo {
     width: 15vw; /* увеличил с 130px */
     height: 4.8vh; /* увеличил с 41px */
+    display: block;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.main-logo:hover {
+    opacity: 0.8;
 }
 
 .main-logo img {
