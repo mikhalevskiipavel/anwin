@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Stone & Rossi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stolzl:wght@300;400&family=Lora:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- Desktop версия -->
+        <div class="header-desktop">
+            <!-- Верхняя часть header -->
+            <div class="header-top">
+                <div class="header-top-left">
+                    <div class="phone-number">+7 (999) 999 99-99</div>
+                </div>
+                
+                <div class="header-top-center">
+                    <div class="main-logo">
+                        <img src="images/main-logo.svg" alt="Main Logo">
+                    </div>
+                </div>
+                
+                <div class="header-top-right">
+                    <div class="logo-text">
+                        <img src="images/logo-text-white.svg" alt="Logo Text">
+                    </div>
+                    
+                    <div class="search-group">
+                        <img src="images/search-icon.svg" alt="Search">
+                    </div>
+                    
+                    <button class="call-btn">Заказать звонок</button>
+                    
+                    <div class="arrow-frame">
+                        <img src="images/arrow-icon.svg" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Разделительная линия -->
+            <div class="divider"></div>
+            
+            <!-- Нижняя часть header - навигация -->
+            <div class="header-bottom">
+                <nav class="navigation">
+                    <a href="#" class="nav-link">Каталог</a>
+                    <a href="#" class="nav-link nav-link-active">Новостройки</a>
+                    <a href="#" class="nav-link">Готовые объекты</a>
+                    <a href="#" class="nav-link">Контакты</a>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Mobile версия -->
+        <div class="header-mobile">
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <img src="images/mobile-menu.svg" alt="Menu">
+            </div>
+            
+            <div class="mobile-phone">
+                <img src="images/mobile-phone.svg" alt="Phone">
+            </div>
+            
+            <div class="mobile-search">
+                <img src="images/mobile-search.svg" alt="Search">
+            </div>
+        </div>
+        
+        <!-- Выпадающее мобильное меню -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <div class="close-btn" onclick="toggleMobileMenu()">
+                        <img src="images/close-icon.svg" alt="Close">
+                    </div>
+                </div>
+                
+                <div class="mobile-menu-nav">
+                    <a href="#" class="mobile-nav-link">Каталог</a>
+                    <a href="#" class="mobile-nav-link">Новостройки</a>
+                    <a href="#" class="mobile-nav-link">Готовые комплексы</a>
+                    <a href="#" class="mobile-nav-link">Контакты</a>
+                </div>
+                
+                <div class="mobile-menu-phone">
+                    <div class="phone-number">+7 (999) 999 99-99</div>
+                </div>
+                
+                <div class="mobile-menu-actions">
+                    <div class="menu-action-item">
+                        <button class="menu-action-btn">
+                            <span>Telegram</span>
+                        </button>
+                        <img src="images/telegram-logo.svg" alt="Telegram">
+                    </div>
+                    
+                    <div class="menu-action-item">
+                        <button class="menu-action-btn">
+                            <span>WhatsApp</span>
+                        </button>
+                        <img src="images/whatsapp-logo.svg" alt="WhatsApp">
+                    </div>
+                    
+                    <div class="menu-action-item">
+                        <button class="menu-action-btn">
+                            <span>Заказать звонок</span>
+                            <img src="images/menu-arrow.svg" alt="Arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Каталог объектов -->
+    <section class="catalog-section">
+        <div class="catalog-container">
+            <h2 class="catalog-title">Новостройки</h2>
+            
+            <div class="catalog-grid">
+                <!-- Карточка 1 -->
+                <div class="catalog-card">
+                    <div class="catalog-card-image"></div>
+                    <div class="catalog-card-content">
+                        <h3 class="catalog-card-title">ДДООММ</h3>
+                        <div class="catalog-card-location">
+                            <img src="images/location-icon.svg" alt="Location" class="location-icon">
+                            <span class="location-text">Россия, г. Москва, ул. Часовая, д. 9</span>
+                        </div>
+                        
+                        <div class="catalog-card-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Сдача проекта</span>
+                                <span class="detail-value">2026</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Сегмент</span>
+                                <span class="detail-value">Бизнес-класс</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Этажи</span>
+                                <span class="detail-value">32</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Стоимость</span>
+                                <span class="detail-value">от 126 000 000₽</span>
+                            </div>
+                        </div>
+                        
+                        <button class="catalog-card-btn">Узнать подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="catalog-card">
+                    <div class="catalog-card-image"></div>
+                    <div class="catalog-card-content">
+                        <h3 class="catalog-card-title">Премиум Тауэр</h3>
+                        <div class="catalog-card-location">
+                            <img src="images/location-icon.svg" alt="Location" class="location-icon">
+                            <span class="location-text">Россия, г. Москва, ул. Тверская, д. 15</span>
+                        </div>
+                        
+                        <div class="catalog-card-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Сдача проекта</span>
+                                <span class="detail-value">2025</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Сегмент</span>
+                                <span class="detail-value">Элитный</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Этажи</span>
+                                <span class="detail-value">45</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Стоимость</span>
+                                <span class="detail-value">от 250 000 000₽</span>
+                            </div>
+                        </div>
+                        
+                        <button class="catalog-card-btn">Узнать подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="catalog-card">
+                    <div class="catalog-card-image"></div>
+                    <div class="catalog-card-content">
+                        <h3 class="catalog-card-title">Современный Квартал</h3>
+                        <div class="catalog-card-location">
+                            <img src="images/location-icon.svg" alt="Location" class="location-icon">
+                            <span class="location-text">Россия, г. Москва, ул. Арбат, д. 25</span>
+                        </div>
+                        
+                        <div class="catalog-card-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Сдача проекта</span>
+                                <span class="detail-value">2027</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Сегмент</span>
+                                <span class="detail-value">Комфорт-класс</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Этажи</span>
+                                <span class="detail-value">18</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Стоимость</span>
+                                <span class="detail-value">от 45 000 000₽</span>
+                            </div>
+                        </div>
+                        
+                        <button class="catalog-card-btn">Узнать подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 4 -->
+                <div class="catalog-card">
+                    <div class="catalog-card-image"></div>
+                    <div class="catalog-card-content">
+                        <h3 class="catalog-card-title">Бизнес Центр</h3>
+                        <div class="catalog-card-location">
+                            <img src="images/location-icon.svg" alt="Location" class="location-icon">
+                            <span class="location-text">Россия, г. Москва, ул. Красная Площадь, д. 1</span>
+                        </div>
+                        
+                        <div class="catalog-card-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Сдача проекта</span>
+                                <span class="detail-value">2024</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Сегмент</span>
+                                <span class="detail-value">Бизнес-класс</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Этажи</span>
+                                <span class="detail-value">28</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Стоимость</span>
+                                <span class="detail-value">от 180 000 000₽</span>
+                            </div>
+                        </div>
+                        
+                        <button class="catalog-card-btn">Узнать подробнее</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Кнопка загрузки еще -->
+            <button class="catalog-view-all-btn">Загрузить еще...</button>
+            
+            <!-- Пагинация -->
+            <div class="pagination">
+                <button class="pagination-btn pagination-prev">&lt;</button>
+                <div class="pagination-numbers">
+                    <button class="pagination-number pagination-active">1</button>
+                    <button class="pagination-number">2</button>
+                    <button class="pagination-number">3</button>
+                </div>
+                <button class="pagination-btn pagination-next">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="callback-section">
+        <div class="callback-container">
+            <div class="callback-card">
+                <div class="callback-form">
+                    <h2 class="callback-title">Оставьте заявку и получите презентацию</h2>
+                    <p class="callback-subtitle">Заполните данные и наш специалист свяжется с вами в ближайшее время для уточнения деталей.</p>
+                    
+                    <form class="callback-form-fields">
+                        <div class="form-field">
+                            <input type="text" id="name" placeholder="Имя" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-field phone-field">
+                            <div class="phone-input-container">
+                                <div class="phone-prefix-inside" onclick="toggleCountryDropdown()">
+                                    <img src="images/russia-flag.jpg" alt="Russia" class="flag-icon-inside" id="selected-flag">
+                                    <span class="country-code-inside" id="selected-code">+7</span>
+                                    <div class="phone-arrow-inside"></div>
+                                </div>
+                                <input type="tel" id="phone" placeholder="" class="phone-input-inside" required data-country-code="RU">
+                                <div class="country-dropdown-inside">
+                                    <div class="country-option" onclick="selectCountry('images/russia-flag.jpg', '+7', 'RU')">
+                                        <img src="images/russia-flag.jpg" alt="Russia" class="flag-icon">
+                                        <span class="country-code">+7</span>
+                                        <span>Россия</span>
+                                    </div>
+                                    <div class="country-option" onclick="selectCountry('https://flagcdn.com/w80/us.png', '+1', 'US')">
+                                        <img src="https://flagcdn.com/w80/us.png" alt="USA" class="flag-icon">
+                                        <span class="country-code">+1</span>
+                                        <span>США</span>
+                                    </div>
+                                    <div class="country-option" onclick="selectCountry('https://flagcdn.com/w80/ua.png', '+380', 'UA')">
+                                        <img src="https://flagcdn.com/w80/ua.png" alt="Ukraine" class="flag-icon">
+                                        <span class="country-code">+380</span>
+                                        <span>Украина</span>
+                                    </div>
+                                    <div class="country-option" onclick="selectCountry('https://flagcdn.com/w80/kz.png', '+7', 'KZ')">
+                                        <img src="https://flagcdn.com/w80/kz.png" alt="Kazakhstan" class="flag-icon">
+                                        <span class="country-code">+7</span>
+                                        <span>Казахстан</span>
+                                    </div>
+                                    <div class="country-option" onclick="selectCountry('https://flagcdn.com/w80/by.png', '+375', 'BY')">
+                                        <img src="https://flagcdn.com/w80/by.png" alt="Belarus" class="flag-icon">
+                                        <span class="country-code">+375</span>
+                                        <span>Беларусь</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="callback-submit-btn">Отправить данные</button>
+                        
+                        <p class="callback-agreement">
+                            Нажимая на кнопку, вы принимаете Положение и даете Согласие на обработку персональных данных.
+                        </p>
+                    </form>
+                </div>
+                
+                <div class="callback-image">
+                    <img src="images/callback-image.jpg" alt="Consultation" class="consultation-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desktop Footer -->
+    <footer class="footer footer-desktop">
+        <!-- Основной контент футера -->
+        <div class="footer-content">
+            <!-- Верхняя строка с логотипом, кнопкой и телефоном -->
+            <div class="footer-top-row">
+                <div class="footer-logo">
+                    <img src="images/footer-logo.svg" alt="Footer Logo">
+                </div>
+                
+                <div class="footer-right-group">
+                    <div class="footer-phone">+7 (999) 999 99-99</div>
+                    <button class="footer-call-btn">Заказать звонок</button>
+                </div>
+            </div>
+            
+            <!-- Разделительная линия 1 -->
+            <div class="footer-divider footer-divider-1"></div>
+            
+            <!-- Навигация -->
+            <div class="footer-nav">
+                <div class="footer-nav-section">
+                    <a href="#" class="footer-nav-title">Каталог</a>
+                </div>
+                <div class="footer-nav-section">
+                    <a href="#" class="footer-nav-title">Новостройки</a>
+                </div>
+                <div class="footer-nav-section">
+                    <a href="#" class="footer-nav-title">Готовые объекты</a>
+                </div>
+                <div class="footer-nav-section">
+                    <a href="#" class="footer-nav-title">Контакты</a>
+                </div>
+            </div>
+            
+            <!-- Разделительная линия 2 -->
+            <div class="footer-divider footer-divider-2"></div>
+            
+            <!-- Средняя секция с контактами и навигацией -->
+            <div class="footer-middle-section">
+                <!-- Контактная информация с социальными иконками -->
+                <div class="footer-contact">
+                    <div class="footer-address">г. Москва, Ленина, д. 546</div>
+                    <div class="footer-email">stonerossi@mail.ru</div>
+                    <div class="footer-phone-secondary">+7 (999) 999 99-99</div>
+                    
+                    <!-- Социальные иконки -->
+                    <div class="footer-social">
+                        <div class="social-icon">
+                            <img src="images/telegram-footer.svg" alt="Telegram">
+                        </div>
+                        <div class="social-icon">
+                            <img src="images/whatsapp-footer.svg" alt="WhatsApp">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Навигация по разделам -->
+                <div class="footer-sections">
+                    <div class="footer-section-group">
+                        <div class="footer-section-title">Старты продаж</div>
+                        <div class="footer-section-links">
+                            <a href="#" class="footer-section-link">Новостройки</a>
+                            <a href="#" class="footer-section-link">Готовые комплексы</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section-group">
+                        <div class="footer-section-title">Районы</div>
+                        <div class="footer-districts-group">
+                            <div class="footer-districts-column">
+                                <a href="#" class="footer-section-link">ЦАО</a>
+                                <a href="#" class="footer-section-link">ЗАО</a>
+                                <a href="#" class="footer-section-link">СЗАО</a>
+                                <a href="#" class="footer-section-link">САО</a>
+                            </div>
+                            <div class="footer-districts-column">
+                                <a href="#" class="footer-section-link">СВАО</a>
+                                <a href="#" class="footer-section-link">ВАО</a>
+                                <a href="#" class="footer-section-link">ЮВАО</a>
+                                <a href="#" class="footer-section-link">ЮАО</a>
+                            </div>
+                            <div class="footer-districts-column">
+                                <a href="#" class="footer-section-link">ЮЗАО</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Разделительная линия 3 -->
+            <div class="footer-divider footer-divider-3"></div>
+            
+            <!-- Правовая информация -->
+            <div class="footer-legal">
+                <div class="footer-legal-text footer-legal-left">
+                    ООО «Сэйнт Росси» является оператором по обработке персональных данных, информация об обработке персональных данных и сведения о реализуемых требованиях к защите персональных данных отражены в Политике в отношении обработки персональных данных.
+                </div>
+                <div class="footer-legal-text footer-legal-right">
+                    ООО «Сэйнт Росси» использует файлы «cookie» с целью персонализации сервисов и повышения удобства пользования веб-сайтом. Если вы не хотите, чтобы ваши пользовательские данные обрабатывались, пожалуйста, ограничьте их использование в своём браузере.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Footer -->
+    <footer class="footer footer-mobile">
+        <!-- Логотип -->
+        <div class="footer-logo">
+            <img src="images/footer-logo.svg" alt="Footer Logo">
+        </div>
+        
+        <!-- Телефон -->
+        <div class="footer-phone">+7 (999) 999 99-99</div>
+        
+        <!-- Кнопка заказа звонка -->
+        <button class="footer-call-btn">Заказать звонок</button>
+        
+        <!-- Разделительная линия 1 -->
+        <div class="footer-divider"></div>
+        
+        <!-- Навигация в две строки -->
+        <div class="footer-nav-row-1">
+            <a href="#" class="footer-nav-link">Каталог</a>
+            <a href="#" class="footer-nav-link">Новостройки</a>
+        </div>
+        <div class="footer-nav-row-2">
+            <a href="#" class="footer-nav-link">Готовые объекты</a>
+            <a href="#" class="footer-nav-link">Контакты</a>
+        </div>
+        
+        <!-- Разделительная линия 2 -->
+        <div class="footer-divider"></div>
+        
+        <!-- Старты продаж -->
+        <div class="footer-section">
+            <div class="footer-section-title">Старты продаж</div>
+            <a href="#" class="footer-section-link">Новостройки</a>
+            <a href="#" class="footer-section-link">Готовые комплексы</a>
+        </div>
+        
+        <!-- Районы в три колонки -->
+        <div class="footer-districts-section">
+            <div class="footer-section-title">Районы</div>
+            <div class="footer-districts-container">
+                <div class="footer-districts-col-1">
+                    <a href="#" class="footer-section-link">ЦАО</a>
+                    <a href="#" class="footer-section-link">ЗАО</a>
+                    <a href="#" class="footer-section-link">СЗАО</a>
+                    <a href="#" class="footer-section-link">САО</a>
+                </div>
+                <div class="footer-districts-col-2">
+                    <a href="#" class="footer-section-link">СВАО</a>
+                    <a href="#" class="footer-section-link">ВАО</a>
+                    <a href="#" class="footer-section-link">ЮВАО</a>
+                    <a href="#" class="footer-section-link">ЮАО</a>
+                </div>
+                <div class="footer-districts-col-3">
+                    <a href="#" class="footer-section-link">ЮЗАО</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Разделительная линия 3 -->
+        <div class="footer-divider"></div>
+        
+        <!-- Контактная информация -->
+        <div class="footer-address">г. Москва, Ленина, д. 546</div>
+        <div class="footer-email">stonerossi@mail.ru</div>
+        <div class="footer-phone-secondary">+7 (999) 999 99-99</div>
+        
+        <!-- Социальные иконки -->
+        <div class="footer-social">
+            <div class="social-icon">
+                <img src="images/whatsapp-footer.svg" alt="WhatsApp">
+            </div>
+            <div class="social-icon">
+                <img src="images/telegram-footer.svg" alt="Telegram">
+            </div>
+        </div>
+        
+        <!-- Разделительная линия 4 -->
+        <div class="footer-divider"></div>
+        
+        <!-- Копирайт -->
+        <div class="footer-copyright">
+            Продажа недвижимости бизнес класса.<br>© 2025 Stone & Rossi
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const overlay = document.getElementById('mobileMenuOverlay');
+            overlay.classList.toggle('active');
+        }
+
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId + '-dropdown');
+            const chip = event.target.closest('.hero-chip');
+            
+            // Проверяем, открыт ли уже этот dropdown
+            const isCurrentlyActive = dropdown && dropdown.classList.contains('active');
+            
+            // Закрываем все открытые dropdown'ы
+            const allDropdowns = document.querySelectorAll('.dropdown-menu');
+            const allChips = document.querySelectorAll('.hero-chip');
+            
+            allDropdowns.forEach(d => d.classList.remove('active'));
+            allChips.forEach(c => c.classList.remove('active'));
+
+            // Если текущий dropdown не был активен, открываем его
+            if (dropdown && chip && !isCurrentlyActive) {
+                dropdown.classList.add('active');
+                chip.classList.add('active');
+            }
+        }
+
+        // Закрытие dropdown'ов при клике вне их
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.filter-dropdown')) {
+                const allDropdowns = document.querySelectorAll('.dropdown-menu');
+                const allChips = document.querySelectorAll('.hero-chip');
+                
+                allDropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+                
+                allChips.forEach(chip => {
+                    chip.classList.remove('active');
+                });
+            }
+        });
+
+        // Обработка выбора элемента из dropdown
+        document.addEventListener('click', function(event) {
+            if (event.target.closest('.dropdown-item')) {
+                const checkbox = event.target.closest('.dropdown-item').querySelector('.checkbox');
+                checkbox.classList.toggle('checked');
+            }
+        });
+
+        // Функции для работы с формой обратной связи
+        function toggleCountryDropdown() {
+            const dropdown = document.querySelector('.country-dropdown-inside');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function selectCountry(flagSrc, code, countryCode) {
+            document.getElementById('selected-flag').src = flagSrc;
+            document.getElementById('selected-code').textContent = code;
+            document.getElementById('phone').setAttribute('data-country-code', countryCode);
+            document.querySelector('.country-dropdown-inside').style.display = 'none';
+        }
+
+        // Закрытие dropdown при клике вне его
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.phone-input-container')) {
+                document.querySelector('.country-dropdown-inside').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
