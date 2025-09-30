@@ -41,7 +41,7 @@ body {
 
 .hero-subtitle {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.11vw; /* 16px из 1440px */
     line-height: 1.2;
     color: #FFFFFF;
@@ -53,7 +53,7 @@ body {
 
 .hero-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 3.33vw; /* 48px из 1440px */
     line-height: 1.4; /* увеличил line-height чтобы строки не наезжали */
     color: #FFFFFF;
@@ -107,7 +107,7 @@ body {
     color: #FFFFFF;
     padding: 1.25vh 1.67vw; /* 16px 24px */
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw; /* 12px */
     line-height: 1.2;
     display: flex;
@@ -160,7 +160,7 @@ body {
 .dropdown-item {
     padding: 1.25vh 1.67vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw;
     line-height: 1.2;
     color: #FFFFFF;
@@ -234,7 +234,7 @@ body {
     color: #FFFFFF;
     padding: 24px 60px;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 12px;
     line-height: 1.2;
     cursor: pointer;
@@ -274,7 +274,7 @@ body {
 
 .investment-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.5vw; /* 36px из 1440px */
     line-height: 1.28;
     color: #FFFFFF;
@@ -355,7 +355,7 @@ body {
 
 .district-name {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.11vw; /* 16px из 1440px */
     line-height: 1.2;
     color: #FFFFFF;
@@ -389,15 +389,16 @@ body {
     }
     
     .hero-subtitle {
-        font-size: 16px;
+        font-size: 3.5vw;
         margin-left: 0;
-        width: 70%;
+        width: 80%;
     }
     
     .hero-title {
-        font-size: 48px;
+        font-size: 12vw;
         line-height: 1.4; /* увеличил line-height для мобильной версии */
         margin-left: 0;
+        width: 90%;
         margin-bottom: 4vh;
     }
     
@@ -417,7 +418,7 @@ body {
     
     .hero-chip {
         padding: 24px;
-        font-size: 12px;
+        font-size: 3vw;
         border-radius: 8px;
         margin-bottom: 0;
     }
@@ -454,14 +455,18 @@ body {
     .checkbox.checked::after {
         font-size: 10px;
     }
+    .district-content {
+        height: 95%;
+    }
     
     .chip-caret {
-        width: 12px; /* увеличил для мобильной версии */
-        height: 12px; /* увеличил для мобильной версии */
+        width: 3vw; /* увеличил для мобильной версии */
+        height: 3vw; /* увеличил для мобильной версии */
     }
     
     .mobile-show-btn {
         display: block;
+        font-size: 3.5vw;
     }
     
     /* Investment section mobile */
@@ -470,7 +475,7 @@ body {
     }
     
     .investment-title {
-        font-size: 24px;
+        font-size: 6vw;
         margin-bottom: 3vh;
     }
     
@@ -506,12 +511,12 @@ body {
     }
     
     .district-name {
-        font-size: 20px;
+        font-size: 5vw;
     }
     
     .district-arrow {
-        width: 20px;
-        height: 20px;
+        width: 5vw;
+        height: 5vw;
     }
     
     /* Полностью скрываем скроллбар */
@@ -594,7 +599,7 @@ body {
 
 .property-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.67vw;
     line-height: 1.28;
     color: #FFFFFF;
@@ -603,7 +608,7 @@ body {
 
 .property-subtitle {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.11vw;
     line-height: 1.2;
     color: #FFFFFF;
@@ -614,7 +619,7 @@ body {
 
 .property-btn {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw;
     line-height: 1.2;
     color: #FFFFFF;
@@ -655,13 +660,13 @@ body {
     }
     
     .property-title {
-        font-size: 6vw;
+        font-size: 8vw;
     }
     
     .property-subtitle {
-        font-size: 4vw;
+        font-size: 5vw;
         margin-top: 2vh;
-        width: 80%;
+        width: 90%;
     }
     
     .property-btn {
@@ -698,19 +703,21 @@ body {
     overflow: hidden;
     margin-right: auto;
     flex: 1;
+    align-items: stretch;
 }
 
 .callback-form {
     flex: 1;
-    padding: 3.33vh 4.44vw 2.22vh 4.44vw;
+    max-width: 60vw;
+    padding: 5vh 4.44vw 2.22vh 4.44vw;
     display: flex;
     flex-direction: column;
 }
 
 .callback-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
-    font-size: 2.22vw;
+    font-weight: 300;
+    font-size: 2vw;
     line-height: 1.28;
     color: #FFFFFF;
     margin: 0 0 1.39vh 0;
@@ -718,8 +725,8 @@ body {
 
 .callback-subtitle {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
-    font-size: 0.97vw;
+    font-weight: 300;
+    font-size: 0.9vw;
     line-height: 1.2;
     color: #C0C0C0;
     margin: 0 0 2.5vh 0;
@@ -748,7 +755,7 @@ body {
     border-radius: 0.56vw;
     padding: 0 1.39vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     outline: none;
@@ -797,7 +804,7 @@ body {
 
 .country-code-inside {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -820,7 +827,7 @@ body {
     border: none;
     padding: 0 1.39vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     outline: none;
@@ -873,7 +880,7 @@ body {
 
 .country-option .country-code {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -882,7 +889,7 @@ body {
 
 .country-option span:last-child {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -895,7 +902,7 @@ body {
     border: none;
     border-radius: 0.56vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     cursor: pointer;
@@ -908,7 +915,7 @@ body {
 
 .callback-agreement {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw;
     line-height: 1.2;
     color: #FFFFFF;
@@ -916,9 +923,19 @@ body {
     max-width: 29.17vw;
 }
 
+.callback-agreement a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.callback-agreement a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
 .callback-image {
     width: 21.18vw;
-    height: 55vh;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -943,6 +960,7 @@ body {
     
     .callback-form {
         padding: 6vw;
+        max-width: 100vw;
     }
     
     .callback-form-fields {
@@ -1059,7 +1077,7 @@ body {
 
 .catalog-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 2.5vw;
     line-height: 1.28;
     color: #FFFFFF;
@@ -1121,22 +1139,24 @@ body {
 .catalog-card-location {
     display: flex;
     align-items: center;
-    gap: 0.83vw;
+    justify-content: flex-start;
+    gap: 0.4vw;
 }
 
 .location-icon {
-    width: 1.39vw;
-    height: 1.39vw;
+    width: 1vw;
+    height: 1vw;
     flex-shrink: 0;
 }
 
 .location-text {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 100;
-    font-size: 0.8vw;
-    line-height: 1.2;
+    font-weight: 300;
+    font-size: 0.6vw;
+    line-height: 1;
     color: #FFFFFF;
-    margin-top: 0.6vw;
+    margin: 0;
+    padding: 0;
 }
 
 .catalog-card-details {
@@ -1155,16 +1175,16 @@ body {
 
 .detail-label {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 100;
-    font-size: 1.1vw;
+    font-weight: 300;
+    font-size: 0.8vw;
     line-height: 1.2;
     color: #FFFFFF;
 }
 
 .detail-value {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 100;
-    font-size: 1.1vw;
+    font-weight: 300;
+    font-size: 0.8vw;
     line-height: 1.2;
     color: #FFFFFF;
     text-align: right;
@@ -1233,7 +1253,7 @@ body {
     border-radius: 0.56vw;
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw;
     line-height: 1.2;
     padding: 0.83vh 1.11vw; /* 8px 16px */
@@ -1262,7 +1282,7 @@ body {
     border-radius: 0.56vw;
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw;
     line-height: 1.2;
     padding: 0.83vh 1.11vw; /* 8px 16px */
@@ -1339,8 +1359,9 @@ body {
     }
     
     .catalog-card-title {
-        font-size: 5vw;
-        font-weight: 300;
+        font-size: 6vw;
+        font-weight: 100;
+        margin-top: 1vw
     }
     
     .catalog-card-location {
@@ -1354,7 +1375,7 @@ body {
     
     .location-text {
         font-size: 2.5vw;
-        font-weight: 100;
+        font-weight: 300;
     }
     
     .catalog-card-details {
@@ -1364,7 +1385,7 @@ body {
     .detail-label,
     .detail-value {
         font-size: 2.8vw;
-        font-weight: 100;
+        font-weight: 300;
     }
     
     .catalog-card-btn {
@@ -1372,6 +1393,7 @@ body {
         font-size: 3.5vw;
         font-weight: 300;
         margin-top: 2vh;
+        border-radius: 2vw;
     }
     
     .catalog-view-all-btn {
@@ -1490,7 +1512,7 @@ body {
 
 .phone-number {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.09vw; /* 14px */
     line-height: 1.28;
     color: #FFFFFF;
@@ -1564,7 +1586,7 @@ body {
 
 .call-btn {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.94vw; /* 12px */
     line-height: 1.2;
     color: #FFFFFF;
@@ -1635,7 +1657,7 @@ body {
 
 .nav-link.active {
     color: #EF6F2E;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /* Адаптивность для планшетов */
@@ -1758,7 +1780,7 @@ body {
 
 .mobile-nav-link {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 4vw; /* 16px */
     line-height: 1.2;
     color: #FFFFFF;
@@ -1772,7 +1794,7 @@ body {
 
 .mobile-nav-link.active {
     color: #EF6F2E;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .mobile-menu-phone {
@@ -1781,7 +1803,7 @@ body {
 
 .mobile-menu-phone .phone-number {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 5vw; /* 20px */
     line-height: 1.28;
     color: #FFFFFF;
@@ -1825,7 +1847,7 @@ body {
 
 .menu-action-btn span {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 3.5vw; /* 14px */
     line-height: 1.2;
     color: #FFFFFF;
@@ -1911,7 +1933,7 @@ body {
     border-radius: 0.56vw; /* 8px */
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw; /* 12px */
     line-height: 1.2;
     cursor: pointer;
@@ -1924,7 +1946,7 @@ body {
 .footer-phone {
     color: #FFFFFF;
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1vw; /* 14px */
     line-height: 1.28;
     text-align: right;
@@ -1993,7 +2015,7 @@ body {
 .footer-phone-secondary {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.97vw; /* 14px */
     line-height: 1.2;
 }
@@ -2029,7 +2051,7 @@ body {
 .footer-section-title {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw; /* 14px */
     line-height: 1.2;
     margin-bottom: 0.42vh; /* 6px */
@@ -2038,7 +2060,7 @@ body {
 .footer-section-link {
     color: #C0C0C0;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw; /* 12px */
     line-height: 1.2;
     text-decoration: none;
@@ -2092,7 +2114,7 @@ body {
 
 .footer-legal-text {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.56vw; /* 8px */
     line-height: 1.2;
     color: #C0C0C0;
@@ -2131,7 +2153,7 @@ body {
     font-size: 4.02vw; /* 16px из 398px */
     color: #FFFFFF;
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.28;
     text-align: left;
     margin: 1.51vh 6.03vw 2vw 6.03vw; /* 6px 24px 0 0 */
@@ -2146,7 +2168,7 @@ body {
     border-radius: 2.01vw; /* 8px */
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 3.02vw; /* 12px из 398px */
     line-height: 1.2;
     cursor: pointer;
@@ -2197,7 +2219,7 @@ body {
 .footer-mobile .footer-section-title {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 3.52vw; /* 14px из 398px */
     line-height: 1.2;
 }
@@ -2205,7 +2227,7 @@ body {
 .footer-mobile .footer-section-link {
     color: #C0C0C0;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 3.02vw; /* 12px из 398px */
     line-height: 1.2;
     text-decoration: none;
@@ -2240,7 +2262,7 @@ body {
 .footer-mobile .footer-phone-secondary {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 3.52vw; /* 14px из 398px */
     line-height: 1.2;
     margin: 0 6.03vw 0.5vh 6.03vw; /* 0 24px 0 24px */
@@ -2285,7 +2307,7 @@ body {
 /* Копирайт */
 .footer-mobile .footer-copyright {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 3vw; /* 10px из 398px */
     line-height: 1.2;
     color: #C0C0C0;
@@ -2359,7 +2381,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.97vw; /* 14px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     text-decoration: none;
     transition: opacity 0.3s ease;
@@ -2373,7 +2395,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.97vw; /* 14px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -2381,7 +2403,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.97vw; /* 14px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -2389,8 +2411,8 @@ body {
 .project-title {
     color: #FFFFFF;
     font-family: 'Lora', serif;
-    font-size: 3.33vw; /* 48px при 1440px viewport */
-    font-weight: 400;
+    font-size: 3vw; /* 48px при 1440px viewport */
+    font-weight: 100;
     line-height: 1.28;
     margin: 0 0 2.08vh 0; /* 30px при 1440px viewport */
 }
@@ -2421,7 +2443,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.83vw; /* 12px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -2445,7 +2467,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.69vw; /* 10px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -2465,21 +2487,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.22vw; /* 32px при 1440px viewport */
+    gap: 2.5vw; /* 32px при 1440px viewport */
     flex-wrap: wrap;
 }
 
 .data-item {
     display: flex;
     flex-direction: column;
-    gap: 0.42vh; /* 6px при 1440px viewport */
+    gap: 0.55vh; /* 6px при 1440px viewport */
 }
 
 .data-label {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.56vw; /* 8px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     opacity: 0.8;
 }
@@ -2488,7 +2510,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.83vw; /* 12px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -2511,6 +2533,7 @@ body {
     transition: background-color 0.3s ease;
     width: 18.47vw; /* 266px при 1440px viewport */
     height: 6vh; /* 49px при 1440px viewport */
+    margin-left: 18vw;
 }
 
 .presentation-btn:hover {
@@ -2521,7 +2544,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.97vw; /* 14px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     flex: 1;
     text-align: left;
@@ -2605,7 +2628,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 0.83vw; /* 12px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -2658,21 +2681,22 @@ body {
 
 .about-text-section {
     flex: 1;
-    max-width: 35vw; /* 504px при 1440px viewport */
+    max-width: 40vw; /* 504px при 1440px viewport */
     background: #26211E;
     border-radius: 1.11vw 0 0 1.11vw; /* 16px при 1440px viewport */
-    padding: 2.78vh 2.22vw; /* 40px 32px при 1440px viewport */
-    height: 55vh;
+    padding: 3vw; /* 40px 32px при 1440px viewport */
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 32px;
 }
 
 .about-title {
     color: #FFFFFF;
     font-family: 'Lora', serif;
-    font-size: 2.5vw; /* 36px при 1440px viewport */
-    font-weight: 400;
+    font-size: 2.3vw; /* 36px при 1440px viewport */
+    font-weight: 100;
     line-height: 1.28;
     margin: 0 0 2.78vh 0; /* 0 0 40px 0 */
 }
@@ -2681,7 +2705,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 1.11vw; /* 16px при 1440px viewport */
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -2779,21 +2803,22 @@ body {
 
 .infrastructure-text-section {
     flex: 1;
-    max-width: 35vw; /* 504px при 1440px viewport */
+    max-width: 40vw; /* 504px при 1440px viewport */
     background: #26211E;
     border-radius: 0 1.11vw 1.11vw 0; /* 0 16px 16px 0 при 1440px viewport */
-    padding: 4vh 3vw; /* 40px 32px при 1440px viewport */
+    padding: 3vw; /* 40px 32px при 1440px viewport */
     height: auto; /* 592px при 1440px viewport */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 32px;
 }
 
 .infrastructure-title {
     color: #FFFFFF;
     font-family: 'Lora', serif;
     font-size: 2.5vw; /* 36px при 1440px viewport */
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.28;
     margin: 0 0 2.78vh 0; /* 0 0 40px 0 */
 }
@@ -2802,7 +2827,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 1.11vw; /* 16px при 1440px viewport */
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -2815,7 +2840,7 @@ body {
 }
 
 .infrastructure-description strong {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /* Адаптивность для мобильных устройств - Инфраструктура */
@@ -2875,21 +2900,22 @@ body {
 
 .architecture-text-section {
     flex: 1;
-    max-width: 35vw; /* 504px при 1440px viewport */
+    max-width: 40vw; /* 504px при 1440px viewport */
     background: #26211E;
     border-radius: 1.11vw 0 0 1.11vw; /* 16px 0 0 16px при 1440px viewport */
-    padding: 4vh 3vw; /* 40px 32px при 1440px viewport */
+    padding: 3vw; /* 40px 32px при 1440px viewport */
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 32px;
 }
 
 .architecture-title {
     color: #FFFFFF;
     font-family: 'Lora', serif;
     font-size: 2.5vw; /* 36px при 1440px viewport */
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.28;
     margin: 0 0 2.78vh 0; /* 0 0 40px 0 */
 }
@@ -2898,7 +2924,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 1.11vw; /* 16px при 1440px viewport */
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -2997,21 +3023,22 @@ body {
 
 .location-text-section {
     flex: 1;
-    max-width: 35vw; /* 504px при 1440px viewport */
+    max-width: 40vw; /* 504px при 1440px viewport */
     background: #26211E;
     border-radius: 0 1.11vw 1.11vw 0; /* 0 16px 16px 0 при 1440px viewport */
-    padding: 4vh 3vw; /* 40px 32px при 1440px viewport */
+    padding: 3vw; /* 40px 32px при 1440px viewport */
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 32px;
 }
 
 .location-title {
     color: #FFFFFF;
     font-family: 'Lora', serif;
     font-size: 2.5vw; /* 36px при 1440px viewport */
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.28;
     margin: 0 0 2.78vh 0; /* 0 0 40px 0 */
 }
@@ -3020,7 +3047,7 @@ body {
     color: #FFFFFF;
     font-family: 'Stolzl', sans-serif;
     font-size: 1.11vw; /* 16px при 1440px viewport */
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -3125,7 +3152,7 @@ body {
 
 .project-page .callback-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.22vw;
     line-height: 1.28;
     color: #FFFFFF;
@@ -3134,7 +3161,7 @@ body {
 
 .project-page .callback-subtitle {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     line-height: 1.2;
     color: #C0C0C0;
@@ -3164,7 +3191,7 @@ body {
     border-radius: 0.56vw;
     padding: 0 1.39vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     outline: none;
@@ -3213,7 +3240,7 @@ body {
 
 .project-page .country-code-inside {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -3236,7 +3263,7 @@ body {
     border: none;
     padding: 0 1.39vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     outline: none;
@@ -3289,7 +3316,7 @@ body {
 
 .project-page .country-option .country-code {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -3298,7 +3325,7 @@ body {
 
 .project-page .country-option span:last-child {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -3311,7 +3338,7 @@ body {
     border: none;
     border-radius: 0.56vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     cursor: pointer;
@@ -3324,7 +3351,7 @@ body {
 
 .project-page .callback-agreement {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw;
     line-height: 1.2;
     color: #FFFFFF;
@@ -3332,12 +3359,23 @@ body {
     max-width: 29.17vw;
 }
 
+.project-page .callback-agreement a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.project-page .callback-agreement a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
 .project-page .callback-image {
-    width: auto;
-    height: 55vh;
+    width: 40vw;
+    height: 60vh;
     overflow: hidden;
     position: absolute;
-    right: 15vw;
+    right: 10vw;
+    top: 0.6vw;
 }
 
 .project-page .consultation-image {
@@ -3359,7 +3397,7 @@ body {
 
 .project-page .infrastructure-map-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.5vw; /* 36px при 1440px viewport */
     line-height: 1.28;
     color: #FFFFFF;
@@ -3372,7 +3410,7 @@ body {
     width: 100%;
 }
 
-.project-page .google-map {
+.project-page .yandex-map {
     width: 80.56vw; /* 1160px при 1440px viewport */
     height: 40vh; /* 420px при 1440px viewport */
     border-radius: 0.56vw; /* 8px */
@@ -3392,7 +3430,7 @@ body {
 
 .project-page .payment-methods-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.5vw; /* 36px при 1440px viewport */
     line-height: 1.28;
     color: #FFFFFF;
@@ -3426,7 +3464,7 @@ body {
 
 .project-page .payment-method-subtitle {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw; /* 14px */
     line-height: 1.2;
     color: #FFFFFF;
@@ -3435,7 +3473,7 @@ body {
 
 .project-page .payment-method-value {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.22vw; /* 32px */
     line-height: 1.28;
     color: #FFFFFF;
@@ -3448,7 +3486,7 @@ body {
     border-radius: 0.56vw; /* 8px */
     padding: 1.11vh 1.67vw; /* 16px 24px */
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw; /* 12px */
     color: #FFFFFF;
     cursor: pointer;
@@ -3474,7 +3512,7 @@ body {
 
 .project-page .mortgage-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.5vw; /* 36px при 1440px viewport */
     line-height: 1.28;
     color: #FFFFFF;
@@ -3519,7 +3557,7 @@ body {
 
 .project-page .developer-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.5vw; /* 36px при 1440px viewport */
     line-height: 1.28;
     color: #FFFFFF;
@@ -3560,7 +3598,7 @@ body {
 
 .project-page .developer-description p {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw; /* 14px при 1440px viewport */
     line-height: 1.2;
     color: #FFFFFF;
@@ -3604,7 +3642,7 @@ body {
 
 .project-page .consultation-title {
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.22vw;
     line-height: 1.28;
     color: #FFFFFF;
@@ -3614,7 +3652,7 @@ body {
 
 .project-page .consultation-subtitle {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     line-height: 1.2;
     color: #C0C0C0;
@@ -3644,7 +3682,7 @@ body {
     border-radius: 0.56vw;
     padding: 0 1.39vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     outline: none;
@@ -3694,7 +3732,7 @@ body {
 
 .project-page .consultation-country-code-inside {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -3717,7 +3755,7 @@ body {
     border: none;
     padding: 0 1.39vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     outline: none;
@@ -3774,7 +3812,7 @@ body {
 
 .project-page .consultation-country-code {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -3783,7 +3821,7 @@ body {
 
 .project-page .consultation-country-option span:last-child {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     white-space: nowrap;
@@ -3796,7 +3834,7 @@ body {
     border: none;
     border-radius: 0.56vw;
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.97vw;
     color: #FFFFFF;
     cursor: pointer;
@@ -3810,7 +3848,7 @@ body {
 
 .project-page .consultation-agreement {
     font-family: 'Stolzl', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.83vw;
     line-height: 1.2;
     color: #FFFFFF;
@@ -3820,11 +3858,11 @@ body {
 
 .project-page .consultation-image {
     width: auto;
-    height: 45vh;
+    height: 100%;
     overflow: hidden;
     position: absolute;
-    right: 15vw;
-    top: 10vh
+    right: 0;
+    top: 0;
 }
 
 .project-page .consultation-image-img {
@@ -3852,6 +3890,7 @@ body {
     
     .project-page .callback-form {
         padding: 6vw;
+        max-width: 100vw;
     }
     
     .project-page .callback-form-fields {
@@ -3965,7 +4004,7 @@ body {
         justify-content: center;
     }
     
-    .project-page .google-map {
+    .project-page .yandex-map {
         width: 90vw;
         height: 40vh;
         border-radius: 2vw;
@@ -4012,16 +4051,18 @@ body {
         min-height: 25vh;
         padding: 4vw;
         flex-shrink: 0;
+        border-radius: 2vw;
     }
     
     .project-page .payment-method-subtitle {
-        font-size: 5.5vw;
+        font-size: 5vw;
         margin-bottom: 2vh;
     }
     
     .project-page .payment-method-value {
-        font-size: 10vw; /* 30px при 600px viewport */
+        font-size: 10.5vw; /* 30px при 600px viewport */
         margin-bottom: 2vh;
+        text-align: center;
     }
     
     .project-page .payment-method-btn {
@@ -4065,7 +4106,7 @@ body {
     }
 
     .project-page .developer-title {
-        font-size: 6vw; /* 24px при 400px viewport */
+        font-size: 6vw; /* 24px при 300px viewport */
         margin-bottom: 4vh;
         text-align: left;
     }
@@ -4077,13 +4118,13 @@ body {
     }
 
     .project-page .developer-logo-container {
-        width: 40vw; /* 160px при 400px viewport */
-        height: 40vw; /* 160px при 400px viewport */
+        width: 40vw; /* 160px при 300px viewport */
+        height: 40vw; /* 160px при 300px viewport */
         border-radius: 3vw; /* 12px */
     }
 
     .project-page .developer-logo {
-        width: 24vw; /* 96px при 400px viewport */
+        width: 24vw; /* 96px при 300px viewport */
     }
 
     .project-page .developer-description {
@@ -4091,7 +4132,7 @@ body {
     }
 
     .project-page .developer-description p {
-        font-size: 4vw; /* 16px при 400px viewport */
+        font-size: 4vw; /* 16px при 300px viewport */
         margin-bottom: 3vh;
         line-height: 1.3;
     }
@@ -4102,7 +4143,7 @@ body {
     }
 
     .project-page .consultation-title {
-        font-size: 6vw; /* 24px при 400px viewport */
+        font-size: 6vw; /* 24px при 300px viewport */
         margin-bottom: 3vh;
         text-align: left;
         width: auto;
@@ -4124,7 +4165,7 @@ body {
     }
 
     .project-page .consultation-subtitle {
-        font-size: 4vw; /* 16px при 400px viewport */
+        font-size: 4vw; /* 16px при 300px viewport */
         margin-bottom: 4vh;
         width: 100%;
     }
@@ -4302,6 +4343,7 @@ body {
         padding: 2vh 3vw;
         justify-content: space-between;
         gap: 0;
+        margin:0;
     }
     
     .presentation-btn span {
